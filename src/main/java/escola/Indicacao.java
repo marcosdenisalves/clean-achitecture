@@ -13,4 +13,28 @@ public class Indicacao {
 		this.indicante = indicante;
 		this.dataIndicacao = LocalDateTime.now();
 	}
+
+	public Aluno getIndicado() {
+		return indicado;
+	}
+
+	public void setIndicado(Aluno indicado) {
+		this.indicado = indicado;
+	}
+
+	public Aluno getIndicante() {
+		return indicante;
+	}
+
+	public void setIndicante(Aluno indicante) {
+		this.indicante = indicante;
+	}
+
+	public LocalDateTime getDataIndicacao() {
+		return dataIndicacao;
+	}
+
+	public void setDataIndicacao(LocalDateTime dataIndicacao) {
+		this.dataIndicacao = dataIndicacao;
+	}
 }

@@ -1,10 +1,6 @@
 package escola;
 
 public class Email {
-	
-	/*
-	 * VALUE OBJECT
-	 */
 
 	public static String VALIDATE_EMAIL = "^[a-zA-Z0-9._]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$";
 	
@@ -15,6 +11,14 @@ public class Email {
 				!endereco.matches(VALIDATE_EMAIL)) {
 			throw new IllegalArgumentException("E-mail inválido...");
 		}
+		this.endereco = endereco;
+	}
+
+	public String getEndereco() {
+		return endereco;
+	}
+
+	public void setEndereco(String endereco) {
 		this.endereco = endereco;
 	}
 }
