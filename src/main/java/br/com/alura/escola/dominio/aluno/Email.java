@@ -1,8 +1,9 @@
-package escola;
+package br.com.alura.escola.dominio.aluno;
 
 public class Email {
 
-	public static String VALIDATE_EMAIL = "^[a-zA-Z0-9._]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$";
+	private static String VALIDATE_EMAIL = 
+			"^[a-zA-Z0-9._]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$";
 	
 	private String endereco;
 

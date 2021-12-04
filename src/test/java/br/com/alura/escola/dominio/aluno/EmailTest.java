@@ -1,4 +1,4 @@
-package escola;
+package br.com.alura.escola.dominio.aluno;
 
 import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
 import static org.junit.jupiter.api.Assertions.assertThrows;
@@ -21,3 +21,4 @@ class EmailTest {
 		assertDoesNotThrow(() -> new Email("fulano.sicrano@email.com.br"));
 	}
 }
+	

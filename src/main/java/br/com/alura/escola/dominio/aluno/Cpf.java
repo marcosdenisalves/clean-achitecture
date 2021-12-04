@@ -1,8 +1,9 @@
-package escola;
+package br.com.alura.escola.dominio.aluno;
 
 public class Cpf {
 	
-	private String CPF_VALIDATE = "\\d{3}\\.\\d{3}\\.\\d{3}\\-\\d{2}";
+	private String CPF_VALIDATE = 
+			"\\d{3}\\.\\d{3}\\.\\d{3}\\-\\d{2}";
 
 	private String numero;
 
