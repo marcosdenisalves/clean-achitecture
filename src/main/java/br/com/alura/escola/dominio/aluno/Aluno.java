@@ -8,6 +8,8 @@ public class Aluno {
 	private Cpf cpf;
 	private String nome;
 	private Email email;
+	private String senha;
+	
 	private List<Telefone> telefones = new ArrayList<>();
 
 	public Aluno(Cpf cpf, String nome, Email email) {
@@ -50,5 +52,13 @@ public class Aluno {
 
 	public void setTelefones(List<Telefone> telefones) {
 		this.telefones = telefones;
+	}
+
+	public String getSenha() {
+		return senha;
+	}
+
+	public void setSenha(String senha) {
+		this.senha = senha;
 	}
 }
