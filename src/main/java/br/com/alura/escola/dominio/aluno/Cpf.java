@@ -22,4 +22,9 @@ public class Cpf {
 	public void setNumero(String numero) {
 		this.numero = numero;
 	}
+
+	@Override
+	public String toString() {
+		return numero;
+	}
 }

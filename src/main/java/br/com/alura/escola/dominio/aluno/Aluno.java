@@ -3,6 +3,9 @@ package br.com.alura.escola.dominio.aluno;
 import java.util.ArrayList;
 import java.util.List;
 
+import br.com.alura.escola.dominio.aluno.exceptions.TelephonesMaxNumberException;
+
+//AGGREATE ROOT
 public class Aluno {
 
 	private Cpf cpf;
@@ -12,6 +15,8 @@ public class Aluno {
 	
 	private List<Telefone> telefones = new ArrayList<>();
 
+	public Aluno() {}
+	
 	public Aluno(Cpf cpf, String nome, Email email) {
 		this.cpf = cpf;
 		this.nome = nome;
@@ -19,6 +24,9 @@ public class Aluno {
 	}
 
 	public void adicionarTelefone(String ddd, String numero) {
+		if (this.telefones.size() == 2) {
+			throw new TelephonesMaxNumberException("Este aluno já atingiu o número máximo de telefones");
+		}
 		this.telefones.add(new Telefone(ddd, numero));
 	}
 	
