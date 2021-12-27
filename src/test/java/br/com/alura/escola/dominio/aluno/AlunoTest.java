@@ -6,7 +6,8 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import br.com.alura.escola.dominio.aluno.exceptions.TelephonesMaxNumberException;
+import br.com.alura.escola.academico.dominio.aluno.Aluno;
+import br.com.alura.escola.academico.dominio.aluno.exceptions.TelephonesMaxNumberException;
 
 class AlunoTest {
 	
