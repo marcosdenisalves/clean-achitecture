@@ -1,8 +1,8 @@
 package br.com.alura.escola.academico.aplicacao.aluno.matricular;
 
 import br.com.alura.escola.academico.dominio.aluno.Aluno;
-import br.com.alura.escola.academico.dominio.aluno.Cpf;
 import br.com.alura.escola.academico.dominio.aluno.Email;
+import br.com.alura.escola.shared.dominio.CPF;
 
 public class AlunoDTO {
 
@@ -17,7 +17,7 @@ public class AlunoDTO {
 	}
 	
 	public Aluno criarAluno() {
-		return new Aluno(new Cpf(this.cpfAluno), 
+		return new Aluno(new CPF(this.cpfAluno), 
 				this.nomeAluno, new Email(this.emailAluno));
 	}
 }

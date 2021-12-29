@@ -7,10 +7,10 @@ import org.junit.jupiter.api.Test;
 import br.com.alura.escola.academico.aplicacao.aluno.matricular.AlunoDTO;
 import br.com.alura.escola.academico.aplicacao.aluno.matricular.MatricularAluno;
 import br.com.alura.escola.academico.dominio.aluno.Aluno;
-import br.com.alura.escola.academico.dominio.aluno.Cpf;
 import br.com.alura.escola.academico.dominio.aluno.LogDeAlunoMatriculado;
-import br.com.alura.escola.academico.dominio.aluno.PublicadorDeEventos;
 import br.com.alura.escola.academico.infra.aluno.RepositorioDeAlunosEmMemoria;
+import br.com.alura.escola.shared.dominio.CPF;
+import br.com.alura.escola.shared.dominio.evento.PublicadorDeEventos;
 
 class MatricularAlunoTest {
 
@@ -25,7 +25,7 @@ class MatricularAlunoTest {
 		AlunoDTO dto = new AlunoDTO("Fulano", "123.456.789-00", "fulano@email.com");
 		useCase.executa(dto);
 		
-		Aluno encontrado = repositorio.buscarPorCpf(new Cpf("123.456.789-00"));
+		Aluno encontrado = repositorio.buscarPorCpf(new CPF("123.456.789-00"));
 		
 		assertEquals("Fulano", encontrado.getNome());
 		assertEquals("123.456.789-00", encontrado.getCpf());

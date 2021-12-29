@@ -1,6 +1,4 @@
-package br.com.alura.escola.academico.dominio.aluno;
-
-import br.com.alura.escola.academico.dominio.Evento;
+package br.com.alura.escola.shared.dominio.evento;
 
 public abstract class Ouvinte {
 	

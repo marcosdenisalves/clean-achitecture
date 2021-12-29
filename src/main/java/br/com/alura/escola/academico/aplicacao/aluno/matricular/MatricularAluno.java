@@ -2,9 +2,9 @@ package br.com.alura.escola.academico.aplicacao.aluno.matricular;
 
 import br.com.alura.escola.academico.dominio.aluno.Aluno;
 import br.com.alura.escola.academico.dominio.aluno.AlunoMatriculado;
-import br.com.alura.escola.academico.dominio.aluno.Cpf;
-import br.com.alura.escola.academico.dominio.aluno.PublicadorDeEventos;
 import br.com.alura.escola.academico.dominio.aluno.RepositorioDeAlunos;
+import br.com.alura.escola.shared.dominio.CPF;
+import br.com.alura.escola.shared.dominio.evento.PublicadorDeEventos;
 
 public class MatricularAluno {
 
@@ -21,7 +21,7 @@ public class MatricularAluno {
 		repositorio.matricular(aluno);
 
 		AlunoMatriculado alunoMatriculado = 
-				new AlunoMatriculado(new Cpf(aluno.getCpf()));
+				new AlunoMatriculado(new CPF(aluno.getCpf()));
 		
 		publicador.publicar(alunoMatriculado);
 	}

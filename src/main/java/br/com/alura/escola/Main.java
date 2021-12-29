@@ -3,8 +3,8 @@ package br.com.alura.escola;
 import br.com.alura.escola.academico.aplicacao.aluno.matricular.AlunoDTO;
 import br.com.alura.escola.academico.aplicacao.aluno.matricular.MatricularAluno;
 import br.com.alura.escola.academico.dominio.aluno.LogDeAlunoMatriculado;
-import br.com.alura.escola.academico.dominio.aluno.PublicadorDeEventos;
 import br.com.alura.escola.academico.infra.aluno.RepositorioDeAlunosEmMemoria;
+import br.com.alura.escola.shared.dominio.evento.PublicadorDeEventos;
 
 public class Main {
 	public static void main(String[] args) {

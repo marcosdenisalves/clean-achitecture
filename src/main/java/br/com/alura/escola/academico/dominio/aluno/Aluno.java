@@ -4,11 +4,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 import br.com.alura.escola.academico.dominio.aluno.exceptions.TelephonesMaxNumberException;
+import br.com.alura.escola.shared.dominio.CPF;
 
 //AGGREATE ROOT
 public class Aluno {
 
-	private Cpf cpf;
+	private CPF cpf;
 	private String nome;
 	private Email email;
 	private String senha;
@@ -17,7 +18,7 @@ public class Aluno {
 
 	public Aluno() {}
 	
-	public Aluno(Cpf cpf, String nome, Email email) {
+	public Aluno(CPF cpf, String nome, Email email) {
 		this.cpf = cpf;
 		this.nome = nome;
 		this.email = email;
@@ -34,7 +35,7 @@ public class Aluno {
 		return cpf.getNumero();
 	}
 
-	public void setCpf(Cpf cpf) {
+	public void setCpf(CPF cpf) {
 		this.cpf = cpf;
 	}
 

@@ -1,22 +1,22 @@
 package br.com.alura.escola.gamificacao.dominio.selo;
 
-import br.com.alura.escola.academico.dominio.aluno.Cpf;
+import br.com.alura.escola.shared.dominio.CPF;
 
 public class Selo {
 
-	private Cpf cpfDoAluno;
+	private CPF cpfDoAluno;
 	private String nome;
 
-	public Selo(Cpf cpfDoAluno, String nome) {
+	public Selo(CPF cpfDoAluno, String nome) {
 		this.cpfDoAluno = cpfDoAluno;
 		this.nome = nome;
 	}
 
-	public Cpf getCpfDoAluno() {
+	public CPF getCpfDoAluno() {
 		return cpfDoAluno;
 	}
 
-	public void setCpfDoAluno(Cpf cpfDoAluno) {
+	public void setCpfDoAluno(CPF cpfDoAluno) {
 		this.cpfDoAluno = cpfDoAluno;
 	}
 

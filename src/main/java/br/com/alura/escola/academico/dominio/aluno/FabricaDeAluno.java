@@ -1,11 +1,13 @@
 package br.com.alura.escola.academico.dominio.aluno;
 
+import br.com.alura.escola.shared.dominio.CPF;
+
 public class FabricaDeAluno {
 
 	private Aluno aluno;
 
 	public FabricaDeAluno comNomeCpfEmail(String nome, String cpf, String email) {
-		this.aluno = new Aluno(new Cpf(cpf), nome, new Email(email));
+		this.aluno = new Aluno(new CPF(cpf), nome, new Email(email));
 		return this;
 	}
 

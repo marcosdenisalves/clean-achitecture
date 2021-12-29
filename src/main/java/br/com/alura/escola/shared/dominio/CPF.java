@@ -1,13 +1,13 @@
-package br.com.alura.escola.academico.dominio.aluno;
+package br.com.alura.escola.shared.dominio;
 
-public class Cpf {
+public class CPF {
 	
 	private String CPF_VALIDATE = 
 			"\\d{3}\\.\\d{3}\\.\\d{3}\\-\\d{2}";
 
 	private String numero;
 
-	public Cpf(String numero) {
+	public CPF(String numero) {
 
 		if (numero == null || !numero.matches(CPF_VALIDATE))
 			throw new IllegalArgumentException("CPF invalido!");

@@ -5,8 +5,8 @@ import java.util.List;
 import java.util.Optional;
 
 import br.com.alura.escola.academico.dominio.aluno.Aluno;
-import br.com.alura.escola.academico.dominio.aluno.Cpf;
 import br.com.alura.escola.academico.dominio.aluno.RepositorioDeAlunos;
+import br.com.alura.escola.shared.dominio.CPF;
 
 public class RepositorioDeAlunosEmMemoria implements RepositorioDeAlunos {
 
@@ -18,7 +18,7 @@ public class RepositorioDeAlunosEmMemoria implements RepositorioDeAlunos {
 	}
 
 	@Override
-	public Aluno buscarPorCpf(Cpf cpf) {
+	public Aluno buscarPorCpf(CPF cpf) {
 		Optional<Aluno> opt = this.matriculados.stream()
 				.filter(x -> x.getCpf().equalsIgnoreCase(cpf.getNumero()))
 				.findFirst();
